@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Documentation</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    #navbar {
+      width: 250px;
+      background-color: #1e1e2f;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      overflow-y: auto;
+    }
+
+    #navbar header {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .nav-link {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      padding: 5px 0;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #00c7ff;
+    }
+
+    #main-doc {
+      margin-left: 260px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .main-section {
+      margin-bottom: 50px;
+    }
+
+    .main-section header {
+      font-size: 1.8em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    code {
+      background-color: #f4f4f4;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+    <a class="nav-link" href="#Arrays">Arrays</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile, high-level programming language.</p>
+      <p>It is commonly used in web development.</p>
+      <p>JavaScript can manipulate HTML and CSS.</p>
+      <p>It enables interactivity in websites.</p>
+      <p>It runs in the browser as well as on the server with Node.js.</p>
+      <code>console.log('Hello, world!');</code>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are containers for storing data values.</p>
+      <p>Use <code>let</code>, <code>const</code>, or <code>var</code> to declare them.</p>
+      <p><code>const</code> is block-scoped and can't be reassigned.</p>
+      <p><code>let</code> is block-scoped and can be reassigned.</p>
+      <p><code>var</code> is function-scoped and hoisted.</p>
+      <code>let name = 'Alice';</code>
+      <code>const age = 25;</code>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are blocks of code designed to perform a task.</p>
+      <p>They can be declared using function declarations or expressions.</p>
+      <p>Arrow functions are a concise way to write functions.</p>
+      <p>Functions can take parameters and return values.</p>
+      <p>They help with code reuse and readability.</p>
+      <code>function greet(name) { return 'Hello ' + name; }</code>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops execute a block of code repeatedly.</p>
+      <p>JavaScript supports several types: for, while, do...while, and forEach.</p>
+      <p>Use them to iterate through arrays or perform repetitive tasks.</p>
+      <p>Always ensure a loop has a termination condition.</p>
+      <p>Infinite loops can crash your program.</p>
+      <code>for(let i = 0; i < 5; i++) { console.log(i); }</code>
+    </section>
+
+    <section class="main-section" id="Arrays">
+      <header>Arrays</header>
+      <p>Arrays store multiple values in a single variable.</p>
+      <p>They are zero-indexed and dynamic in size.</p>
+      <p>You can use methods like push, pop, map, filter, and reduce.</p>
+      <p>They can contain any data type, including other arrays.</p>
+      <p>Looping through arrays is common in JS programs.</p>
+      <code>let fruits = ['apple', 'banana', 'cherry'];</code>
+      <ul>
+        <li>push()</li>
+        <li>pop()</li>
+        <li>map()</li>
+        <li>filter()</li>
+        <li>reduce()</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
