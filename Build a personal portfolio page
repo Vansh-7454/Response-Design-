@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    #navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #navbar a:hover {
+      color: #00d1b2;
+    }
+
+    /* Welcome Section */
+    #welcome-section {
+      height: 100vh;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    #welcome-section h1 {
+      font-size: 2.5rem;
+    }
+
+    /* Projects Section */
+    #projects {
+      background-color: #f4f4f4;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #projects h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .project-tile {
+      display: inline-block;
+      background-color: white;
+      margin: 20px;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-tile:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-tile a {
+      text-decoration: none;
+      color: #0072ff;
+      font-weight: bold;
+    }
+
+    /* Profile Link */
+    #profile-link {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #0072ff;
+      color: white;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    #profile-link:hover {
+      background-color: #005fd1;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      #navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .project-tile {
+        width: 90%;
+      }
+
+      #welcome-section h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="#welcome-section">Welcome</a>
+    <a href="#projects">Projects</a>
+    <a id="profile-link" href="https://github.com/yourusername" target="_blank">GitHub Profile</a>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome-section">
+    <h1>Hello, I'm a Web Developer 🚀</h1>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-tile">
+      <h3>Project One</h3>
+      <p>A cool web app using HTML, CSS, and JavaScript.</p>
+      <a href="https://example.com" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-tile">
+      <h3>Project Two</h3>
+      <p>A responsive portfolio website.</p>
+      <a href="https://example.com" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-tile">
+      <h3>Project Three</h3>
+      <p>Todo App with React.</p>
+      <a href="https://example.com" target="_blank">View Project</a>
+    </div>
+  </section>
+
+</body>
+</html>
